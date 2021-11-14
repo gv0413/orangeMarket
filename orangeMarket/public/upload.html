@@ -18,16 +18,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Upload</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link" href="./login.html">Login</a>
                     </li>
                 </ul>
             </div>
@@ -121,7 +118,7 @@
             db.collection('product').add({제목: title, 내용: content, 가격: price, 날짜: date, 이미지 : imgUrl}).then(result => {
                 // window.alert("성공!");
                 console.log(result)
-                // window.location.href = "/index.html";
+                window.location.href = "/index.html";
             }).catch((e) => {
                 console.log(e)
                 // window.alert('실패!', e);
